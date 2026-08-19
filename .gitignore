@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+.env
+.DS_Store
+gha-creds-*.json
+iam_spark_package.zip
+key.json

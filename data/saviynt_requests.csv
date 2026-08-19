@@ -1,0 +1,344 @@
+req_id,user,ts,app,role,status,approver,justification
+4c01fc74-1a84-43b1-acb2-dd228eae6280,user31,2025-10-02 02:07:32,Snowflake,Editor,REJECTED,user29,Project Work
+5b6055d0-54cf-4639-968f-2f01b7c56d3a,user41,2025-10-02 12:01:02,Snowflake,Editor,PENDING,user6,Emergency
+2c49bfdc-1aa5-431d-806e-ac6b4168dfcd,user22,2025-10-02 14:11:23,Jira,Editor,APPROVED,user18,Project Work
+0e45d4cf-4dba-40b9-b289-a70419d79683,user28,2025-10-02 15:30:39,Snowflake,Reader,REJECTED,user36,Project Work
+71ba483e-4317-420c-a13e-33f3a27365eb,user15,2025-10-03 01:00:35,Workday,Reader,APPROVED,user22,BAU
+54051b9c-148f-4394-9326-d32b45df1e5c,user31,2025-10-03 07:29:13,Snowflake,Editor,APPROVED,user12,Project Work
+95758258-8d87-459a-915c-8693af3f6971,user28,2025-10-03 11:20:18,SAP,Editor,REJECTED,user26,BAU
+1f68baa5-53ee-4992-838e-2c30cac2725a,user27,2025-10-03 19:09:30,Snowflake,Editor,REJECTED,user30,BAU
+a3b477cd-e51a-4ab7-b263-c5e202647f6d,user8,2025-10-04 04:06:12,Snowflake,Reader,REJECTED,user12,BAU
+7f87cd67-a4cc-4db4-b723-7735af8ec4b1,user8,2025-10-04 04:08:43,Databricks,Reader,PENDING,user16,Emergency
+4d30ffa7-3086-413f-ab81-ff4a34fafd3a,user42,2025-10-04 21:05:12,GitHub,Editor,REJECTED,user18,Project Work
+53eb2470-ba66-4ff5-9bf3-a6036ab5abb3,user17,2025-10-05 00:52:52,GitHub,Reader,REJECTED,user13,Project Work
+e9acb8dc-11af-4ad8-94dc-1b6fd2bb69fd,user4,2025-10-05 05:18:35,GitHub,Reader,REJECTED,user20,BAU
+99096180-c22e-4bf3-a56d-86a1caa4be78,user45,2025-10-05 07:36:46,Databricks,Reader,REJECTED,user32,Project Work
+9812fce7-161c-40de-a265-28aedb30a13f,user17,2025-10-05 22:16:09,SAP,Editor,PENDING,user23,Project Work
+ae4ce739-9812-4946-bf46-e05f0a5a95f5,user45,2025-10-05 22:57:58,GitHub,Reader,PENDING,user47,Project Work
+d320074d-1f8d-4a8d-9be0-5d38efb2846e,user35,2025-10-06 01:23:20,Jira,Reader,APPROVED,user5,Emergency
+7da284e1-50c0-4acb-a50e-f58b3cf62ddd,user17,2025-10-06 06:37:45,GitHub,Editor,APPROVED,user4,Emergency
+980e07e4-d144-4108-ba59-fa5c2a10374a,user31,2025-10-06 06:41:08,Salesforce,Reader,REJECTED,user14,Emergency
+043a7bd6-8544-453b-a3d9-ea0e83ed065a,user26,2025-10-06 07:06:52,GitHub,Editor,PENDING,user31,Emergency
+2264efba-5781-4db7-a183-b63bad14b142,user21,2025-10-06 13:58:47,GitHub,Reader,PENDING,user50,Project Work
+658bc845-297b-4b04-9018-4421a3ee93bd,user5,2025-10-06 18:21:02,Workday,Reader,REJECTED,user19,BAU
+8d6d0b8b-cb73-4338-987c-ae2958e30fdd,user30,2025-10-06 20:52:08,Jira,Editor,APPROVED,user43,Emergency
+b9bfb837-92c4-48d5-8711-ee04b399e0f8,user38,2025-10-06 23:55:40,SAP,Editor,PENDING,user7,Project Work
+d593038b-c884-4eb3-9ba7-b886d14d7c2e,user26,2025-10-07 01:25:53,GitHub,Editor,APPROVED,user10,Project Work
+7cf88bf6-9aab-4ca7-83e1-f637c8ff2d9d,user37,2025-10-07 01:26:32,GitHub,Editor,REJECTED,user2,Project Work
+8af0f73f-c767-4be7-90ec-6e0bae226de1,user39,2025-10-07 02:04:58,Snowflake,Editor,PENDING,user1,BAU
+20c02a7b-356e-45af-8e98-9c8f5131fba2,user38,2025-10-07 03:35:13,Jira,Editor,REJECTED,user45,Project Work
+c6d66ac6-92de-4c90-8ec3-ed962205cfb2,user8,2025-10-07 15:32:07,Snowflake,Editor,APPROVED,user43,Project Work
+765a447d-23f3-420f-8ccc-869682af644d,user24,2025-10-07 17:16:00,GitHub,Editor,REJECTED,user16,BAU
+342a389d-bc1f-465d-ab71-6269d1b6be9a,user37,2025-10-07 18:06:40,Workday,Editor,APPROVED,user31,Project Work
+8fba1cc0-ed98-4402-bf99-afe91cc015ed,user17,2025-10-07 22:16:07,SAP,Editor,PENDING,user30,Emergency
+20ee417d-cf99-459b-ada3-38197c0660c8,user38,2025-10-07 22:23:22,Salesforce,Editor,REJECTED,user28,BAU
+c7eb3396-3b92-48f5-a887-07c4ee0ae05f,user2,2025-10-08 03:31:55,Salesforce,Editor,PENDING,user4,Project Work
+ed51d483-4921-415b-a0da-e0550109e071,user15,2025-10-08 08:06:27,GitHub,Editor,PENDING,user49,Emergency
+b76ee81f-d21f-489a-a81f-04e7f0f8ed31,user39,2025-10-08 08:10:43,Snowflake,Reader,PENDING,user12,Emergency
+6616041d-beb3-4ba3-b1ab-8ae47fc271e7,user16,2025-10-08 09:50:41,Salesforce,Editor,REJECTED,user38,Project Work
+1c51181e-a3fa-45cb-bad5-7de71970c000,user10,2025-10-08 10:58:32,Snowflake,Editor,APPROVED,user39,Emergency
+29e73c4d-2921-4a3e-b7a3-b8ab3b14a5a0,user6,2025-10-08 16:36:15,Workday,Editor,PENDING,user46,Emergency
+e4c02114-af61-4266-aea9-b42b2a9fc72c,user34,2025-10-08 22:28:33,Snowflake,Editor,PENDING,user35,BAU
+d499216e-6b34-4b22-8d23-01502be31083,user32,2025-10-08 22:45:41,Databricks,Editor,APPROVED,user8,BAU
+a137b113-2e9b-47f1-ae6a-972a79be58b8,user45,2025-10-08 23:37:03,GitHub,Reader,APPROVED,user36,Emergency
+36d7039c-c2e1-431f-8738-4480b46025b3,user39,2025-10-09 06:08:47,Jira,Editor,PENDING,user45,Project Work
+8a2a3a6d-56fb-4952-a8a5-7a3c4b9bdc9d,user15,2025-10-09 07:33:31,GitHub,Editor,REJECTED,user16,Emergency
+7f4bd8f8-adf3-4efa-97ff-77c5dbf502c8,user4,2025-10-09 17:49:14,Snowflake,Editor,APPROVED,user1,Emergency
+30f8db48-b936-4be4-bb40-c5a55095e394,user10,2025-10-09 23:39:28,Workday,Reader,APPROVED,user47,Project Work
+f2d14631-b12e-49fd-83e8-fa374b411ccd,user10,2025-10-10 05:57:47,Databricks,Reader,REJECTED,user17,BAU
+5362b7a8-b5c7-4d77-8476-38ee2d8b5a3d,user11,2025-10-10 07:46:01,Salesforce,Editor,PENDING,user2,Emergency
+025a888d-be8d-4821-9e43-4e112d04c058,user8,2025-10-10 14:17:14,Workday,Editor,APPROVED,user24,Project Work
+d379d841-2571-4487-84cb-60cf215d14df,user19,2025-10-10 17:23:03,Databricks,Reader,REJECTED,user10,Emergency
+e7cf9b59-1a95-4376-9ce7-59521cf3ad13,user20,2025-10-10 20:45:05,Snowflake,Editor,PENDING,user49,Emergency
+c4c20f60-5934-42d2-b3a6-68be730a140e,user19,2025-10-10 21:06:22,Snowflake,Reader,PENDING,user6,BAU
+53c810ba-f7d2-45b4-9eb3-14ee943ece9e,user28,2025-10-10 22:16:02,SAP,Reader,APPROVED,user6,Project Work
+f08634f1-d84e-4db9-85f2-283d0c58861f,user31,2025-10-11 08:41:52,Databricks,Reader,PENDING,user48,Emergency
+dce39cbb-95e8-469b-8b9c-e096b29989f9,user17,2025-10-11 18:58:57,Salesforce,Editor,APPROVED,user9,Emergency
+be8f51ce-eb26-4959-972d-00979150cf6c,user16,2025-10-11 20:30:39,Databricks,Reader,APPROVED,user27,BAU
+d6de783a-8c3d-4581-a0e1-683af840b183,user47,2025-10-11 23:04:01,SAP,Editor,REJECTED,user29,BAU
+f1bb58b5-2a45-48d5-847c-03390768bb6b,user45,2025-10-11 23:53:21,Snowflake,Editor,REJECTED,user36,Project Work
+bd0a371c-614d-4102-9be6-993308df75c8,user8,2025-10-12 00:51:57,Snowflake,Reader,REJECTED,user14,Emergency
+c845b03d-0cd9-4a6c-b46d-7d2aba778236,user32,2025-10-12 02:49:28,SAP,Editor,REJECTED,user47,Project Work
+f1f23ff4-fb26-4adf-93a8-b983d6dfe503,user32,2025-10-12 03:27:43,Databricks,Reader,APPROVED,user26,Emergency
+05aad117-c96c-4b0a-94e1-be69227939d8,user17,2025-10-12 06:05:19,Snowflake,Editor,APPROVED,user9,Emergency
+8f61fdd4-fe02-4396-b8e2-2e51a4f54b94,user18,2025-10-12 07:21:57,Salesforce,Reader,APPROVED,user50,BAU
+80ea0568-78e6-4828-90da-ac0949949351,user39,2025-10-12 11:58:41,Snowflake,Reader,REJECTED,user43,Project Work
+8920d329-190c-4281-8363-6c207e82825a,user6,2025-10-12 14:10:29,SAP,Reader,PENDING,user21,Emergency
+22c18db3-2d2f-428c-aa16-581eb3f06673,user30,2025-10-12 19:52:31,Salesforce,Editor,APPROVED,user26,BAU
+a617ba9c-c2bf-40a7-bca0-c69cf7b2b07a,user18,2025-10-12 20:00:13,Salesforce,Reader,PENDING,user30,Emergency
+0a98e4d6-606a-49fb-9b7e-74dd21a77842,user37,2025-10-13 03:02:56,Jira,Editor,PENDING,user22,BAU
+8bcf9ce9-4768-4c59-aa77-ee47f46f68d6,user19,2025-10-13 06:36:29,Snowflake,Reader,PENDING,user9,BAU
+1c1057fe-1302-4398-a31e-fd2718487b67,user18,2025-10-13 07:43:17,SAP,Reader,APPROVED,user48,Project Work
+80af903e-90ac-4904-bfab-6d1fe8545a24,user36,2025-10-13 09:03:52,Snowflake,Reader,APPROVED,user2,Project Work
+25164d57-00b3-4fce-9b29-610dad70bedd,user49,2025-10-13 15:18:46,Workday,Reader,APPROVED,user25,Project Work
+55307558-5c1b-4689-bee1-b2b3089a369d,user41,2025-10-13 17:47:52,Snowflake,Editor,REJECTED,user3,Project Work
+b54114d4-e7e5-4f5d-b013-42d35cdb45be,user28,2025-10-13 19:16:18,Snowflake,Editor,APPROVED,user9,BAU
+512bf92f-6267-44c7-a87d-c925b6a92065,user38,2025-10-13 23:34:43,Databricks,Reader,PENDING,user39,Emergency
+5ec3fbb0-8551-48bd-bbae-aa6d14c5f1ff,user1,2025-10-14 01:23:27,Workday,Editor,PENDING,user16,Emergency
+4cee5891-d2d2-40af-b68d-88326854505d,user49,2025-10-14 05:00:45,Salesforce,Editor,REJECTED,user2,Emergency
+f7a1ec62-3d79-4656-bcaa-5c34ede63120,user18,2025-10-14 05:35:14,Workday,Editor,PENDING,user8,BAU
+b020f5ef-0f58-4e3a-ac57-33b8d9bd22c7,user10,2025-10-14 09:34:00,Databricks,Editor,APPROVED,user34,BAU
+3aef07c2-c775-41fd-b9b2-cdf12b9d4a94,user38,2025-10-14 20:50:06,GitHub,Reader,PENDING,user38,Project Work
+d9d3c543-c613-4ed5-ae94-38df532eaf29,user34,2025-10-15 01:59:31,Salesforce,Editor,PENDING,user48,BAU
+252c74b3-f2ca-4dbf-a402-3cb95bcb79b3,user45,2025-10-15 11:50:33,Jira,Editor,REJECTED,user21,BAU
+b09652bf-7cae-4394-8179-65991dabd0a4,user36,2025-10-15 18:07:35,Databricks,Reader,PENDING,user5,BAU
+69643a0d-af4f-44ea-9a28-a7ed58e098de,user49,2025-10-16 01:32:57,GitHub,Admin,REJECTED,user11,BAU
+3d19837a-c819-4fc5-aeed-111e85b2177b,user3,2025-10-16 02:34:08,Databricks,Editor,PENDING,user28,Project Work
+394e941a-eb5b-47f1-9000-384f5851e633,user16,2025-10-16 05:42:38,Snowflake,Editor,APPROVED,user9,Project Work
+c1433c5b-09f3-4c09-9e21-ed18bd950db6,user25,2025-10-16 08:14:27,Workday,Editor,PENDING,user37,BAU
+277d01ee-e4b2-411e-b4a4-68912d419654,user28,2025-10-16 10:38:15,Workday,Reader,REJECTED,user15,BAU
+a417c8aa-10f4-4149-ac0d-5e38a83f0690,user37,2025-10-16 11:09:24,Salesforce,Reader,REJECTED,user5,Emergency
+ae991d53-f99a-4e5f-a629-8387fc24799e,user44,2025-10-16 12:32:25,Databricks,Editor,PENDING,user44,Project Work
+cacd43fd-a4c2-4c17-b6da-5a761100dd79,user33,2025-10-16 13:39:20,Jira,Editor,APPROVED,user38,Project Work
+884da6ac-68da-4189-b5d3-b16429db4d3b,user30,2025-10-16 13:40:50,Jira,Editor,APPROVED,user29,Emergency
+977d04d1-e85b-4b15-b742-03fad1963760,user21,2025-10-17 01:46:09,Snowflake,Reader,PENDING,user23,Project Work
+3ce61ba1-75b8-4ebb-96dd-e20da65442bf,user38,2025-10-17 02:29:33,Workday,Editor,PENDING,user8,BAU
+5e2b1b47-b4ed-47fe-b1c2-f3ebbbd02a02,user26,2025-10-17 16:27:53,SAP,Editor,APPROVED,user48,BAU
+abf2f8a5-ad48-48c7-84c1-ca097da1e4c4,user29,2025-10-17 19:39:19,Salesforce,Reader,REJECTED,user21,Project Work
+05ab8665-9ba5-4f59-a3a0-ad56b715d38f,user24,2025-10-17 19:55:29,Salesforce,Reader,REJECTED,user22,Emergency
+3fc68a79-0378-4a04-ad13-338646489999,user40,2025-10-18 02:48:45,Jira,Reader,PENDING,user5,Emergency
+f1ec4e04-5372-4d8a-ad2e-3e8e813410ca,user25,2025-10-18 09:41:35,Snowflake,Editor,PENDING,user32,Project Work
+051600c1-228e-4e7c-8fb4-1528d68dbe28,user18,2025-10-18 11:29:12,Databricks,Reader,APPROVED,user12,Project Work
+3db91b1b-ca3a-4f36-bc5b-39054c2e64e9,user45,2025-10-18 13:35:18,Snowflake,Reader,REJECTED,user49,BAU
+7a6c0586-a0fc-4ad5-a3e0-01ce37989267,user33,2025-10-18 19:55:55,Workday,Admin,REJECTED,user35,BAU
+20b72f3b-7c7b-47cf-a5ae-eddf4ac6d161,user33,2025-10-19 02:53:17,SAP,Admin,PENDING,user35,BAU
+285b9f7c-851c-43d9-98c4-a29939c3551a,user9,2025-10-19 09:33:31,GitHub,Editor,PENDING,user1,Emergency
+14f6a1d6-a3fa-455d-8103-325bb3987e0d,user32,2025-10-19 18:30:24,Jira,Editor,APPROVED,user8,Emergency
+a74ca85e-b5fe-4711-933d-8c4567480df5,user30,2025-10-19 18:46:54,SAP,Reader,PENDING,user40,Project Work
+813dc41d-86e7-4d70-9829-f1465deb894c,user44,2025-10-19 20:05:15,SAP,Reader,PENDING,user19,Emergency
+db54061e-7e8b-4fda-961a-ac932084ff43,user41,2025-10-19 23:17:14,Salesforce,Editor,APPROVED,user48,BAU
+6d69470a-ac7a-452b-9bda-077b61264b5e,user40,2025-10-19 23:51:18,SAP,Reader,REJECTED,user41,Project Work
+8eed878c-c6cc-49c2-9966-aa4d9176ba88,user49,2025-10-20 03:35:02,GitHub,Admin,APPROVED,user46,Project Work
+dab95aa7-2bbf-4790-8689-a9a42b2dde74,user41,2025-10-20 03:46:33,Databricks,Reader,PENDING,user47,Project Work
+c15b5a48-2ac7-4cda-a096-0f3b7cbab210,user26,2025-10-20 04:29:05,GitHub,Editor,REJECTED,user21,Emergency
+51c56aef-2c7e-49ba-96b8-569a16df96b7,user22,2025-10-20 04:48:21,Jira,Reader,REJECTED,user11,Project Work
+484016ce-7d8c-41f2-8210-b3481061a88a,user5,2025-10-20 05:35:10,Workday,Developer,REJECTED,user2,Emergency
+abb9c09f-2db4-4dc3-86f7-f3124393d59b,user39,2025-10-20 07:26:13,Databricks,Editor,PENDING,user45,Project Work
+b6818fc6-5371-4bc5-92be-7aa3cd1765a9,user11,2025-10-20 11:55:52,GitHub,Editor,APPROVED,user10,BAU
+0e082e8b-b6fe-4b3e-beca-4feaeba7651d,user21,2025-10-20 13:48:47,GitHub,Editor,PENDING,user48,BAU
+2d739fb0-5a1b-4bc7-ab27-6a1a2921319d,user20,2025-10-20 15:46:21,Snowflake,Reader,APPROVED,user32,Project Work
+cdc79272-b601-4476-a796-0b32b4656855,user15,2025-10-20 17:41:18,GitHub,Reader,PENDING,user44,Emergency
+9d319081-fa17-4ebb-9222-6579bbccd83e,user31,2025-10-21 00:50:11,SAP,Editor,REJECTED,user47,Project Work
+07556446-9271-49e3-ade7-308df49a6e81,user32,2025-10-21 11:37:55,Snowflake,Reader,REJECTED,user14,Emergency
+98705348-e6fc-4f8e-9e6e-abab8cf695c7,user49,2025-10-21 11:51:47,Jira,Developer,REJECTED,user47,Project Work
+951ac8f2-d9d9-481a-ae43-df01758bc9a2,user37,2025-10-21 14:18:14,GitHub,Editor,PENDING,user37,Project Work
+2900b683-795d-4092-9af1-a972a8bc45da,user8,2025-10-21 21:03:38,GitHub,Developer,APPROVED,user11,Emergency
+1a621056-d1e3-4527-8fb8-36383826e144,user19,2025-10-22 03:44:30,Salesforce,Editor,PENDING,user12,Project Work
+e729330a-e56c-4456-9106-846fa620239a,user14,2025-10-22 08:39:30,GitHub,Developer,PENDING,user11,Emergency
+f7f082aa-22ff-4499-b8de-2910f5c99df9,user9,2025-10-22 15:34:06,SAP,Reader,APPROVED,user8,BAU
+7178f43c-59c7-4c7b-ab22-b62b34b9a955,user23,2025-10-23 00:15:27,Jira,Admin,APPROVED,user20,Emergency
+4e5f8157-56bd-42e6-be82-b61ecdfb666c,user20,2025-10-23 03:51:12,Workday,Editor,APPROVED,user11,Project Work
+fd5408ab-ac1f-40b4-b23b-7f4492f36b94,user49,2025-10-23 14:09:22,Jira,Developer,REJECTED,user23,BAU
+2090defb-2e0b-42d6-8ae8-5789cd5e86a2,user10,2025-10-23 20:39:54,GitHub,Developer,PENDING,user47,Project Work
+5700cae1-3fcb-43fd-8045-cf86217de7a9,user47,2025-10-23 21:59:04,Jira,Editor,PENDING,user22,Project Work
+bebfdd56-4049-4ea5-adff-0229cdfa1c24,user3,2025-10-24 00:43:29,Workday,Developer,REJECTED,user12,BAU
+bd4f4977-d6d5-4fbf-b61a-4069e21339a2,user14,2025-10-24 01:33:06,Salesforce,Developer,APPROVED,user47,Emergency
+f3c0d464-4948-4d9f-b157-ad50e7728df2,user50,2025-10-24 04:37:49,SAP,Reader,APPROVED,user6,Emergency
+2577634d-f874-4150-89af-b967463fca91,user41,2025-10-24 06:30:05,SAP,Editor,PENDING,user11,BAU
+f1b68eb7-ef3d-465c-80ef-34093f59f464,user32,2025-10-24 12:33:44,SAP,Editor,REJECTED,user5,Project Work
+aa7e2cc4-be86-4748-a5e4-51c8bf7091f8,user46,2025-10-24 17:21:11,Databricks,Reader,APPROVED,user37,Emergency
+67117661-27aa-4da4-b986-ab495f8f2687,user18,2025-10-24 17:29:51,GitHub,Editor,REJECTED,user6,Project Work
+6aabf794-05b9-4c48-8442-99139fc97c81,user12,2025-10-24 19:54:17,SAP,Reader,REJECTED,user40,Project Work
+2adbf33c-7222-4936-b576-eb0d44d3d244,user3,2025-10-25 00:41:15,GitHub,Developer,APPROVED,user7,Project Work
+e18255b7-adda-4d71-bcd9-c13a84578893,user39,2025-10-25 01:55:04,SAP,Editor,PENDING,user24,Emergency
+90c28396-dcce-4d1d-a926-3b230fd7c348,user3,2025-10-25 06:10:17,Databricks,Developer,REJECTED,user26,BAU
+608b40df-7c5c-4a8c-8d06-e61f2d2befb1,user30,2025-10-25 06:37:28,Salesforce,Reader,REJECTED,user1,Project Work
+42643768-1052-4048-8a66-9cba91088789,user34,2025-10-25 13:59:58,GitHub,Reader,REJECTED,user42,Project Work
+4ec3d8f8-673a-427b-aeab-7e4ddecbaa48,user32,2025-10-25 16:19:19,Snowflake,Editor,PENDING,user18,BAU
+b67adbb1-c83d-4400-adcc-be26c44f33a2,user9,2025-10-25 21:41:10,GitHub,Admin,PENDING,user19,Project Work
+026f55cc-4f85-45d9-b9f3-ce5cdb78a909,user13,2025-10-26 04:54:37,Jira,Editor,REJECTED,user30,Emergency
+69bcda38-b872-4376-a01f-6ba49da86ce3,user6,2025-10-26 05:57:43,Databricks,Editor,REJECTED,user3,Project Work
+894a8cad-be5e-40a8-b5b2-579ba04398eb,user21,2025-10-26 08:51:58,Workday,Reader,APPROVED,user21,Project Work
+6a3c0c1d-5ffb-49d6-9f28-7c2114fcd9ce,user8,2025-10-26 16:17:58,Salesforce,Reader,REJECTED,user44,Emergency
+423c984e-e471-41d8-9520-6c2b9048f7f0,user11,2025-10-26 16:28:18,Jira,Developer,APPROVED,user37,BAU
+3be1af86-db4e-4bd9-ac89-72d47abbc4ee,user44,2025-10-26 23:36:53,Salesforce,Developer,PENDING,user22,BAU
+ab46a1b3-faa6-482d-9df1-3989e8a221f4,user43,2025-10-27 02:54:39,GitHub,Admin,APPROVED,user37,BAU
+1e10a6e9-47dd-47f3-91e5-b5362171ec0e,user17,2025-10-27 04:27:12,GitHub,Editor,REJECTED,user28,Project Work
+752a2a70-b568-4984-aaa5-3caea848cbd2,user36,2025-10-27 11:30:45,GitHub,Editor,APPROVED,user35,Emergency
+779be8b0-ffaa-4ea2-9026-3f735c61170d,user47,2025-10-27 11:57:28,Salesforce,Editor,APPROVED,user12,BAU
+35785ccd-3d5d-4130-a2f7-2b857d6d8e1e,user13,2025-10-27 17:35:04,GitHub,Reader,PENDING,user47,BAU
+671f84c6-52ba-4269-9b2f-9b87faef5ea2,user15,2025-10-27 18:10:47,SAP,Reader,APPROVED,user5,BAU
+82c70646-8a8e-4441-90fd-fe033f8d68ca,user21,2025-10-27 21:12:17,SAP,Editor,REJECTED,user24,Project Work
+9f750530-56b5-46a3-abeb-3924a38bce0b,user21,2025-10-27 22:49:25,Databricks,Reader,PENDING,user49,Project Work
+2a2d79d2-328f-41ac-8589-0f41afa0160b,user35,2025-10-28 00:26:28,Jira,Editor,APPROVED,user21,Emergency
+2d77766c-f5b5-40ed-b9c0-9a402a1abe7e,user8,2025-10-28 02:32:24,Workday,Reader,PENDING,user28,Emergency
+3e2a0fde-5a35-4959-8381-469791213585,user33,2025-10-28 08:11:22,Salesforce,Admin,PENDING,user32,BAU
+1442b6c8-f6c3-4711-88b0-a33d51a45316,user21,2025-10-28 13:41:59,GitHub,Editor,REJECTED,user30,Project Work
+c1a356b4-c265-41ff-a1d1-97e34285c574,user36,2025-10-28 14:32:37,Snowflake,Editor,REJECTED,user23,Emergency
+d0f71308-4deb-490b-845d-011dfd1992e5,user32,2025-10-28 19:07:48,Workday,Editor,PENDING,user45,Emergency
+601df7bb-3407-4d7e-8da2-6e5bc8da4594,user3,2025-10-28 20:45:42,Workday,Admin,REJECTED,user25,Emergency
+79ae3bbe-b92e-49d0-a39b-f202ab802785,user44,2025-10-29 06:52:15,Salesforce,Admin,REJECTED,user10,Project Work
+7962a4f2-0143-4d08-910b-9e5b6038413e,user43,2025-10-29 10:15:14,GitHub,Admin,REJECTED,user39,Emergency
+686e402f-2c5e-4eff-9f38-0baa456ee85f,user38,2025-10-29 14:31:09,Snowflake,Reader,REJECTED,user50,Emergency
+291d2c05-cd99-483a-bba0-0acb49052869,user25,2025-10-29 19:50:31,Jira,Reader,REJECTED,user50,BAU
+52f11624-e766-4d14-a725-b3ca5bb6ac77,user30,2025-10-29 21:10:17,Databricks,Editor,REJECTED,user17,Project Work
+a596824a-6954-4d86-b6f2-e10abc4f53dd,user31,2025-10-29 23:48:40,Salesforce,Reader,REJECTED,user24,Project Work
+b3b12b98-ebff-4313-b226-7cde576c7ac7,user41,2025-10-30 01:51:39,Jira,Editor,APPROVED,user28,Emergency
+0e64e9a5-82f6-4188-bbbe-7e217b81caf1,user3,2025-10-30 04:49:40,Workday,Developer,APPROVED,user2,Emergency
+8e6e8831-5350-47d2-a73d-ad7c21d39f01,user49,2025-10-30 08:18:09,SAP,Developer,PENDING,user5,Project Work
+41d0d21f-6bc3-4544-8376-72be45279fa3,user12,2025-10-30 08:41:12,Snowflake,Reader,PENDING,user31,Emergency
+88dd69ee-eba2-462a-b055-8079846c2b0e,user6,2025-10-30 10:24:58,Databricks,Editor,REJECTED,user49,BAU
+66654235-d858-4378-ab5f-99600f3c230a,user30,2025-10-30 19:00:06,Salesforce,Editor,REJECTED,user11,BAU
+935ebcc1-35a6-4960-b0b3-360b25f69a8d,user45,2025-10-30 19:07:43,Jira,Reader,PENDING,user32,Emergency
+d734d354-b970-4907-98e7-dc8af18d2176,user25,2025-10-30 19:37:00,GitHub,Reader,APPROVED,user31,BAU
+2517e6df-2114-4072-ba4e-65d47510ab07,user42,2025-10-30 22:01:21,Salesforce,Editor,REJECTED,user25,Emergency
+368f1022-14ec-4c73-a15d-201287d69868,user19,2025-10-30 23:14:11,Jira,Reader,APPROVED,user33,BAU
+32ac0749-fa3a-4fb6-9207-a7c2ab3227d4,user45,2025-10-31 01:27:02,Workday,Reader,APPROVED,user48,Emergency
+dfe65d88-fb56-4128-b303-c54b6eca9a4b,user38,2025-10-31 02:02:29,Databricks,Editor,REJECTED,user19,BAU
+9f042912-bee0-42d2-9ad8-e9edaa335511,user47,2025-10-31 03:12:50,Snowflake,Reader,APPROVED,user43,Project Work
+87929e36-fbe5-4efe-bf31-308ec7a3f55e,user46,2025-10-31 04:30:52,Snowflake,Admin,APPROVED,user16,Project Work
+ea7f6af8-61a2-4fb6-9abb-6afd54021b8c,user10,2025-10-31 09:20:14,Workday,Developer,APPROVED,user26,BAU
+aba79c4c-2f79-46cb-b4f0-20ffda880963,user6,2025-10-31 10:38:39,Jira,Editor,REJECTED,user25,BAU
+e5384566-98b3-4cc3-8e0b-1cebf9a109d1,user27,2025-10-31 11:52:32,GitHub,Developer,REJECTED,user18,BAU
+b1c18527-d93c-4378-8f93-369e1aad8338,user39,2025-10-31 12:50:59,Snowflake,Editor,PENDING,user12,Emergency
+2ada13e7-a7d4-45e9-8be1-bb2c855b6357,user32,2025-11-01 12:26:58,Snowflake,Editor,PENDING,user37,Project Work
+723286fb-3162-4c12-ac8a-99f6a571f102,user45,2025-11-01 14:12:22,Databricks,Editor,APPROVED,user15,Emergency
+387a8021-ba8a-44dd-aa52-83457c731d0e,user28,2025-11-01 17:03:27,SAP,Reader,REJECTED,user21,Emergency
+b839c83f-edb1-4675-8d5c-68b799853481,user14,2025-11-01 19:07:35,Jira,Developer,APPROVED,user31,BAU
+427ec365-2dd6-43e8-93ed-27d35e02f876,user2,2025-11-01 19:20:13,SAP,Editor,APPROVED,user46,Emergency
+799697f9-f559-4b2c-9af8-86f9760cc315,user17,2025-11-02 03:17:39,Databricks,Admin,APPROVED,user43,BAU
+0e4fff21-48ce-4fe6-8b49-eaff3a4b88f7,user20,2025-11-02 19:24:23,Salesforce,Editor,PENDING,user19,BAU
+aac94f2a-168d-450a-b0b2-177011aa9c99,user10,2025-11-02 22:38:16,Databricks,Developer,PENDING,user21,BAU
+a42c4f85-11c1-4db9-8943-9ce00a3cb5cf,user42,2025-11-03 03:42:43,Workday,Editor,PENDING,user39,Project Work
+2d32c768-d1fc-45ca-9a91-892ddc7a0dac,user12,2025-11-03 07:14:05,GitHub,Editor,PENDING,user40,Project Work
+7af84f45-1945-4ebe-b2df-523f4ea07630,user33,2025-11-03 11:31:47,Workday,Admin,APPROVED,user42,BAU
+d37e9283-0c58-4092-beb7-9a53f76fd15f,user1,2025-11-03 19:41:51,Jira,Reader,REJECTED,user37,BAU
+7c760b54-bb9c-41b1-a426-85e28481171a,user40,2025-11-04 00:33:25,Workday,Reader,REJECTED,user14,BAU
+42e3812f-1807-4a2e-b41b-9c481b358f6f,user17,2025-11-04 03:16:54,SAP,Admin,APPROVED,user23,Emergency
+2e1698fa-1c4f-4ff6-8aec-749b55272f83,user28,2025-11-04 16:03:32,Snowflake,Editor,REJECTED,user22,BAU
+944ae9e2-78da-4dc1-813b-d8547e49df63,user33,2025-11-04 17:41:55,GitHub,Developer,REJECTED,user6,Emergency
+a9513a1f-b06e-4185-9ff8-5245cacdfbbb,user23,2025-11-05 07:24:37,Snowflake,Developer,REJECTED,user46,Project Work
+6d6f7b07-4787-4ef9-8d79-93d6507285c6,user8,2025-11-05 14:01:06,Snowflake,Editor,PENDING,user14,Project Work
+dbf03ca5-fe48-4ef0-a270-10ad7b9d0b03,user16,2025-11-05 15:09:45,SAP,Reader,APPROVED,user14,Project Work
+bedc6714-0861-44e0-86e6-7ecd1c17790d,user21,2025-11-05 16:33:29,Jira,Reader,REJECTED,user1,Project Work
+b8e0d972-ec8c-419e-8823-34ee3bccd0de,user28,2025-11-05 19:25:03,GitHub,Reader,PENDING,user25,Emergency
+627a33b3-a898-4454-9dad-d3d837b17540,user5,2025-11-05 21:21:17,Salesforce,Developer,PENDING,user11,BAU
+a23b2ad0-3d00-4e8b-9291-7d88fa66a870,user48,2025-11-06 05:03:44,SAP,Reader,APPROVED,user39,Emergency
+3802c5aa-773f-4cdf-a052-d3159da61b9d,user49,2025-11-06 14:47:10,Jira,Developer,PENDING,user23,Project Work
+a7bb8abf-21dc-4449-b9eb-8cf684f1ec46,user13,2025-11-06 15:39:38,Databricks,Editor,PENDING,user34,BAU
+f949d0a6-c40b-494c-94b7-3019fd43fb52,user48,2025-11-06 16:01:17,Workday,Reader,REJECTED,user14,BAU
+447457ba-81ba-4e71-8e51-e332a723b1c9,user24,2025-11-06 16:06:09,Workday,Reader,REJECTED,user41,Project Work
+f2f1582b-52ae-4455-8a81-9c13626c438b,user38,2025-11-06 17:37:06,GitHub,Reader,PENDING,user8,Emergency
+b1d1307d-de24-45fa-b202-0b469d45055a,user38,2025-11-06 17:48:55,Workday,Reader,REJECTED,user3,Project Work
+ff332f8f-6db2-4a6a-ba33-f6785f2ab4ad,user2,2025-11-07 02:11:53,Salesforce,Reader,PENDING,user27,BAU
+a8ce2205-1cce-48ce-a0a6-fd0c382fd4ba,user4,2025-11-07 02:21:24,GitHub,Developer,REJECTED,user49,BAU
+0896af01-cf7f-4253-914b-88f399548a73,user14,2025-11-07 06:49:05,Salesforce,Admin,REJECTED,user24,Emergency
+c5c37446-11e2-4d7b-abff-646ac3e1856e,user43,2025-11-07 20:05:40,Databricks,Admin,REJECTED,user34,Emergency
+a46d2d5d-dd50-4174-8f65-4fb724b0ddad,user24,2025-11-07 20:56:59,SAP,Editor,PENDING,user28,Emergency
+b2829cec-79f6-400a-9348-e3ae096c7fda,user17,2025-11-08 04:24:59,Salesforce,Admin,PENDING,user12,Project Work
+036e548f-bf27-462a-ad96-81ebb02c18da,user18,2025-11-08 05:13:03,GitHub,Reader,PENDING,user17,Emergency
+39d7ae14-04fa-4859-a475-a8a048d41f8c,user38,2025-11-08 08:11:18,Workday,Reader,APPROVED,user13,Project Work
+8c1cb549-a7fe-44b9-8249-4e7132700781,user15,2025-11-08 08:13:46,SAP,Reader,REJECTED,user37,BAU
+ac602fe5-9be1-48b7-976e-a1007df90323,user9,2025-11-08 09:30:30,SAP,Developer,REJECTED,user9,Emergency
+fc4c5652-57dc-4b78-b48a-6b6383598b60,user28,2025-11-08 10:43:26,Salesforce,Reader,APPROVED,user14,Project Work
+76b29193-7a56-4586-9e41-d463eef47b78,user17,2025-11-08 11:00:53,Databricks,Admin,PENDING,user18,Emergency
+4bd3eedf-f525-496a-a79f-6abec2664170,user21,2025-11-08 21:19:02,Salesforce,Reader,REJECTED,user47,Project Work
+a16601a6-c5a1-482c-bede-69011f4d93f6,user10,2025-11-08 23:49:56,Databricks,Admin,PENDING,user4,Project Work
+40fefd57-3cd7-4653-a99d-171e8fd22b3e,user35,2025-11-09 02:12:08,SAP,Editor,APPROVED,user15,Emergency
+0934373b-865b-4f05-8d08-c6271dcefefd,user14,2025-11-09 07:27:42,Databricks,Admin,REJECTED,user2,Emergency
+81726ace-2b2c-4e9a-b784-5726e79da85f,user19,2025-11-09 13:32:40,SAP,Editor,PENDING,user13,Project Work
+7f48b1d5-ff6e-4502-94e3-0c3986ba743f,user9,2025-11-09 17:30:46,Jira,Developer,REJECTED,user25,Project Work
+90672cc9-0c56-43c3-b6f7-5a239bf8219c,user2,2025-11-09 19:00:53,Workday,Reader,APPROVED,user40,BAU
+d8201d8a-7e71-4a9f-8fc4-b32d0b3cbd16,user47,2025-11-10 07:53:34,Snowflake,Editor,PENDING,user49,Project Work
+f9e09b5f-7cb7-4acd-8fd4-7743eec96089,user11,2025-11-10 15:00:14,Workday,Developer,APPROVED,user49,Emergency
+95d5fb1f-855d-4462-bf1b-16438b8fa706,user36,2025-11-10 15:31:00,Databricks,Editor,REJECTED,user28,Emergency
+920122da-e289-430a-b71d-9e93b1e58ef1,user40,2025-11-10 15:46:24,Databricks,Reader,PENDING,user9,Emergency
+de5fb309-9dc5-4c64-bc9c-874004667d3b,user9,2025-11-11 01:17:24,Databricks,Admin,PENDING,user48,Project Work
+148b7787-e0e3-4eed-a4e3-7cd86ffbed1f,user35,2025-11-11 05:54:12,Salesforce,Editor,PENDING,user26,BAU
+94dc5986-9103-43e5-8dd1-0dcd4aeddcf9,user24,2025-11-11 05:58:46,GitHub,Reader,PENDING,user31,BAU
+f38102bb-8bb9-4b69-a4b2-02fd7f386f54,user18,2025-11-11 10:08:38,GitHub,Editor,PENDING,user28,Project Work
+c0a5796e-8563-4312-84ca-9f090b1f3a31,user32,2025-11-11 15:27:50,Snowflake,Reader,REJECTED,user28,Project Work
+743bf1cc-03a4-4c76-ae0b-a979f8653498,user10,2025-11-11 21:32:39,GitHub,Developer,PENDING,user5,BAU
+25238d06-cae7-4245-99ae-6c3c47f85a63,user36,2025-11-12 03:03:35,SAP,Reader,PENDING,user20,Project Work
+6161605b-8f64-4326-ad2f-2729bdcbdb5d,user10,2025-11-12 16:15:15,Snowflake,Developer,PENDING,user5,BAU
+05201160-1e2f-46a0-a5f3-b4b5e28f6840,user18,2025-11-12 17:01:51,SAP,Reader,PENDING,user18,Emergency
+b9349ebe-c64f-4f7b-b904-619d33710410,user13,2025-11-12 17:09:29,Databricks,Editor,REJECTED,user48,BAU
+3784c12c-d0dc-42cc-a3cc-41d4ecccc21a,user27,2025-11-13 08:51:06,Salesforce,Admin,APPROVED,user39,Project Work
+437ca621-0844-4e02-b630-bda24cc27735,user21,2025-11-13 10:01:07,Databricks,Reader,PENDING,user12,BAU
+3ac165a1-f758-47a8-abad-67d7d05a4792,user34,2025-11-13 18:22:02,Snowflake,Reader,REJECTED,user33,Emergency
+38324122-0408-4a40-b1f0-448e99912f04,user43,2025-11-13 22:57:21,GitHub,Admin,PENDING,user28,Emergency
+b562be55-f194-49e0-9849-aa19346def01,user28,2025-11-14 00:20:36,Databricks,Editor,PENDING,user9,Project Work
+1a4e5c22-8441-45d7-a8bf-8d0bd83588fb,user19,2025-11-14 00:53:30,Databricks,Reader,APPROVED,user46,BAU
+2e4e01c1-1b2a-406d-9305-e0fd42b29858,user37,2025-11-14 00:57:58,SAP,Admin,REJECTED,user2,Project Work
+2219d033-8dcb-456d-ba66-443655cd4e65,user30,2025-11-14 06:52:38,Snowflake,Reader,APPROVED,user38,BAU
+0d16b1f4-e5a1-4944-8def-765ac61dec0f,user31,2025-11-14 10:56:52,Salesforce,Editor,APPROVED,user32,Project Work
+7bee73de-c15a-48f9-8fb0-461a149edf76,user50,2025-11-14 23:48:05,GitHub,Reader,APPROVED,user28,Project Work
+0e312e9f-0ac3-4764-8b26-ccc13ae29ac2,user32,2025-11-15 01:01:05,Snowflake,Reader,PENDING,user3,Emergency
+f4f0c171-3728-4b78-b341-408d41bde474,user45,2025-11-15 02:16:34,Snowflake,Reader,PENDING,user37,BAU
+f82b600c-62a3-4f64-9c2d-ad3207fd722b,user39,2025-11-15 02:57:20,Salesforce,Reader,APPROVED,user15,BAU
+beaaa680-6bec-4fdd-96b0-ded9ef93d47e,user47,2025-11-15 06:04:25,Jira,Editor,APPROVED,user15,BAU
+12f8ba90-bee4-4a84-9b51-ea02bfd311a8,user34,2025-11-15 09:19:01,Workday,Editor,REJECTED,user10,Emergency
+0324b900-97c7-43ba-b4bd-fa2aae82391b,user20,2025-11-15 09:52:16,Workday,Editor,REJECTED,user48,BAU
+d5cb5abc-4859-47a3-8594-f00336803cf6,user32,2025-11-15 12:48:55,GitHub,Reader,APPROVED,user8,Project Work
+ff61d5d2-1678-4dec-b2fe-bf5dc1e25a97,user16,2025-11-16 14:10:19,SAP,Editor,APPROVED,user8,Emergency
+4e4539a2-defb-4ca6-9452-7148ad027236,user37,2025-11-16 19:22:11,Salesforce,Developer,REJECTED,user7,BAU
+742cfb6f-3883-4bc6-9784-c1cf7d4af380,user16,2025-11-16 21:44:03,Jira,Editor,APPROVED,user50,BAU
+951736ca-2e16-404b-be39-193938056a1d,user13,2025-11-16 22:01:08,Databricks,Editor,APPROVED,user30,Project Work
+d9980874-a3aa-4876-9288-9b82d1c09e3d,user16,2025-11-17 03:02:01,SAP,Editor,APPROVED,user19,Project Work
+da56e794-44eb-44f1-b8fd-ff225b605512,user10,2025-11-17 07:50:02,Jira,Admin,PENDING,user10,Project Work
+c43a4d22-f2a1-4071-9388-d4dd6438a1df,user9,2025-11-17 10:22:23,Databricks,Developer,PENDING,user21,BAU
+27c9c5fe-39c0-4359-a28b-b1410af170f6,user2,2025-11-17 12:18:47,Salesforce,Editor,REJECTED,user5,BAU
+05a66d2e-8476-4981-8fe7-c17381adf69a,user42,2025-11-17 13:01:36,Salesforce,Editor,PENDING,user40,Emergency
+5b9db4bd-3483-4b3f-ab17-fd4f18e85639,user28,2025-11-17 19:30:17,Salesforce,Editor,APPROVED,user34,Project Work
+297776a4-bdbd-442a-b048-4cd54d071d3d,user34,2025-11-18 00:17:36,GitHub,Editor,REJECTED,user6,Emergency
+d3d38c4d-67fb-4d53-b7e9-f780730a24a8,user48,2025-11-18 10:49:45,Workday,Editor,REJECTED,user39,BAU
+62e92e05-3e86-4d8c-9194-487cf224db75,user22,2025-11-18 11:04:23,Jira,Editor,APPROVED,user32,Emergency
+9c9480e1-e620-4610-81e4-8490cedc0467,user29,2025-11-18 11:26:09,Snowflake,Reader,APPROVED,user49,BAU
+ecd61a20-7117-4b79-823d-4d49bfda4db4,user37,2025-11-18 13:30:01,GitHub,Developer,REJECTED,user36,Emergency
+4f90a174-b3a0-4f97-be09-0a1a565d0491,user25,2025-11-18 14:36:09,GitHub,Reader,PENDING,user7,Project Work
+dfd953b9-4ba0-4fb8-86a7-6827aba1be16,user2,2025-11-18 21:29:48,Salesforce,Editor,PENDING,user44,Project Work
+07d7b990-1342-4cd5-b6f6-fda991118d20,user13,2025-11-18 21:57:46,Jira,Editor,REJECTED,user24,Project Work
+2325490a-ebc0-488e-92fd-193681d915fb,user37,2025-11-18 23:33:43,Workday,Admin,PENDING,user50,BAU
+b3a05fc7-d031-436a-b05f-087c2e922186,user6,2025-11-19 00:02:42,GitHub,Editor,REJECTED,user50,Project Work
+89b77c12-8e90-4ed0-8ca6-92b044c73422,user35,2025-11-19 01:05:26,Workday,Reader,PENDING,user49,BAU
+f7dbebb4-19ee-42a3-8a82-2c68ec576583,user40,2025-11-19 02:16:11,Jira,Editor,APPROVED,user7,BAU
+636c1463-f4ec-48f8-a7bf-0861896214af,user13,2025-11-19 04:11:24,Databricks,Editor,REJECTED,user35,Project Work
+ab7e8e1c-2091-4a6f-852d-da2de8d29ab7,user6,2025-11-19 14:52:01,Jira,Reader,APPROVED,user21,Emergency
+67924b06-7f40-4cf0-aac4-a8615b2fd9fd,user44,2025-11-20 05:59:26,Databricks,Admin,REJECTED,user31,Emergency
+4e5f121a-fdbc-4c29-ab60-08f5afcf6ec9,user5,2025-11-20 07:36:39,Salesforce,Developer,APPROVED,user40,Project Work
+d0a2a2da-ca13-48a8-85e8-28a345635eb2,user34,2025-11-20 10:40:59,Salesforce,Reader,APPROVED,user17,Emergency
+7bca4937-1150-4982-93b0-874a8aa6e11d,user10,2025-11-20 12:44:56,Snowflake,Admin,APPROVED,user15,BAU
+ce2d0779-4397-45ce-8951-d45cfe91d17d,user17,2025-11-21 00:51:02,Salesforce,Developer,PENDING,user27,BAU
+8d3ef1f4-b069-41c2-a74f-261e5ccf1819,user39,2025-11-21 01:57:27,Salesforce,Editor,APPROVED,user9,BAU
+474a9145-6064-4d36-8781-8885244f17a9,user2,2025-11-21 06:37:12,Snowflake,Reader,PENDING,user23,BAU
+1477b59a-7f1f-4b60-b3ce-9b9f29aa1002,user4,2025-11-21 08:53:35,Salesforce,Developer,APPROVED,user23,BAU
+f3852623-9b14-428f-a3ea-a815aad22069,user1,2025-11-21 23:28:44,Snowflake,Editor,PENDING,user15,Emergency
+1bcc029b-2079-4c10-9f23-cbe8913f9105,user2,2025-11-22 15:40:11,SAP,Editor,APPROVED,user26,BAU
+ee7d3a6a-dc28-4915-909b-3c5176dafa86,user16,2025-11-22 16:21:39,Databricks,Editor,PENDING,user36,Emergency
+0c23ba81-b5cd-422b-bb04-74cdb1adbbba,user22,2025-11-23 08:01:42,Databricks,Editor,APPROVED,user32,Emergency
+c325ca48-757b-4c1c-b32c-a818d73a7044,user30,2025-11-23 16:35:32,Databricks,Editor,APPROVED,user8,BAU
+db688c3b-2be9-460a-a91f-b668a7df083a,user4,2025-11-23 20:41:57,Snowflake,Admin,PENDING,user4,Emergency
+a0b8d33a-bd8b-4a51-ab7e-4449e583960f,user31,2025-11-24 10:49:41,Workday,Editor,PENDING,user16,BAU
+1552f605-c541-4a36-aea0-781b8fcf3ca0,user50,2025-11-24 16:10:24,GitHub,Reader,APPROVED,user34,Project Work
+c50a9bf1-8c33-4f97-99e1-2eee2f5312f7,user44,2025-11-24 16:45:34,Databricks,Admin,REJECTED,user38,Emergency
+8fd9e138-44e7-4928-87f5-47ccb51cc4b8,user14,2025-11-24 16:52:57,GitHub,Admin,PENDING,user27,BAU
+6556f8ee-d1a7-4599-a504-32f7a5b70576,user28,2025-11-25 04:46:12,Salesforce,Reader,APPROVED,user47,Emergency
+0dc8766b-9e81-40b0-bc8a-6c045a79af7e,user6,2025-11-25 04:53:13,Workday,Editor,REJECTED,user8,Emergency
+ad15752a-c359-4806-ac26-a7e6975debe9,user7,2025-11-25 05:16:51,Databricks,Developer,APPROVED,user20,Emergency
+40958a2a-887b-42e6-bce5-c4f837839198,user20,2025-11-25 12:16:23,SAP,Reader,PENDING,user17,Project Work
+fc0029ab-d239-4f61-a6b5-3706fc1567c0,user34,2025-11-25 16:48:02,Workday,Reader,APPROVED,user45,Project Work
+fc7c8850-edf7-412a-9751-6532fc7469d7,user37,2025-11-25 18:59:39,Snowflake,Developer,APPROVED,user47,Emergency
+1ff9408e-5037-4ca8-b3ef-0237fce4682e,user26,2025-11-25 19:50:54,Databricks,Admin,REJECTED,user28,Emergency
+eb729e9b-d312-41da-9f2a-14507d342e94,user6,2025-11-25 19:59:23,GitHub,Reader,APPROVED,user24,BAU
+cc9e6072-97bb-4105-b8b4-b79ca598b5fe,user7,2025-11-25 20:59:27,Snowflake,Developer,REJECTED,user25,BAU
+e0ad0193-5534-4c3b-96a1-309bb8250243,user39,2025-11-25 22:19:14,Salesforce,Editor,PENDING,user1,Project Work
+70f37e6f-bf43-4087-bc3f-d6569f2e6fc5,user29,2025-11-26 03:29:57,Snowflake,Reader,PENDING,user45,BAU
+aee3f1fe-b967-4de2-9795-49b9b3d42c44,user1,2025-11-26 05:04:15,Snowflake,Reader,PENDING,user46,Project Work
+9ea1e988-1aee-45eb-8a6c-31312be58695,user2,2025-11-26 10:27:29,SAP,Editor,APPROVED,user47,BAU
+451ad518-2212-46c3-adce-48dbde73185e,user6,2025-11-26 15:52:38,Workday,Editor,PENDING,user42,BAU
+b50ac65f-8d62-42b2-a77d-7fe440b1344f,user25,2025-11-26 21:14:01,Salesforce,Editor,REJECTED,user45,BAU
+6f81bc48-e99e-475c-ad70-b24ff690c74d,user26,2025-11-27 01:41:35,Workday,Developer,PENDING,user13,Emergency
+b51ab92f-8ecd-47b0-98eb-cc1d0c561937,user42,2025-11-27 05:46:36,Jira,Reader,REJECTED,user6,Emergency
+f9d7f36c-2cc8-424b-8164-ffe4e3e4cf23,user2,2025-11-27 09:23:18,Workday,Editor,APPROVED,user40,BAU
+2af8f26f-699b-488e-bf0d-ce56cd570744,user45,2025-11-27 11:05:38,Salesforce,Editor,PENDING,user27,BAU
+7aeb2c0e-a0a8-4a3c-8f5f-4b990b1f5e88,user13,2025-11-27 13:46:58,Jira,Reader,APPROVED,user41,Project Work
+a622d7d5-b3db-4619-9230-410fdf2e3881,user4,2025-11-27 16:44:05,Workday,Admin,APPROVED,user12,BAU
+3d94835c-2206-42ae-820a-bf6cf7c01fcb,user46,2025-11-27 18:14:18,Workday,Admin,APPROVED,user11,Project Work
+a064144d-31f2-4fa2-93aa-0d8b8ce84e58,user19,2025-11-27 20:51:30,SAP,Reader,APPROVED,user45,BAU
+21acba76-2b20-40dc-8279-58bd83bab54b,user45,2025-11-29 09:38:03,Salesforce,Editor,REJECTED,user16,BAU
+b4a6aecf-9775-453a-8126-1599b40c4f42,user7,2025-11-29 11:10:01,SAP,Developer,REJECTED,user48,BAU
+f397f9f7-d7c3-474f-899b-b94ce24ed18b,user31,2025-11-29 20:14:48,Snowflake,Reader,APPROVED,user40,BAU
+28b75ad3-8422-4ae5-8770-535ac8600495,user23,2025-11-30 00:19:04,Databricks,Admin,APPROVED,user34,Project Work
+d43ba57a-6e81-400b-aa75-19737365db52,user5,2025-11-30 05:26:41,Salesforce,Admin,APPROVED,user29,Emergency
+3014f515-58e3-4d5b-b282-96b4439e8fc2,user36,2025-11-30 06:04:44,SAP,Editor,PENDING,user38,BAU
+35ac077f-94ef-4f9a-8b51-f78d4e693ad9,user25,2025-11-30 13:24:18,Workday,Reader,APPROVED,user32,Emergency

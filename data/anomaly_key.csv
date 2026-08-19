@@ -1,0 +1,7 @@
+user,anomaly_description
+user41,Q1: IMPOSSIBLE TRAVEL: Brazil → Singapore in 4min
+user41,Q4: VPN GEO MISMATCH (False Positive)
+user41,Q5: LONG SESSION: 9.13h > 8h
+user8,Q4: VPN GEO MISMATCH (False Positive)
+user8,Q2: ORPHAN REQUEST: 2900b683-795d-4092-9af1-a972a8bc45da approved but unused
+user8,Q5: LONG SESSION: 11.0h > 8h

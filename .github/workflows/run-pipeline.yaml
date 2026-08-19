@@ -1,0 +1,240 @@
+name: IAM Pipeline (Manual, Low Cost)
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: GitHub Environment containing the GCP configuration
+        required: true
+        type: choice
+        options: [dev, prod]
+        default: dev
+      operation:
+        description: Validation is free; full-pipeline starts one Dataproc batch
+        required: true
+        type: choice
+        options:
+          - validate-only
+          - ingestion-only
+          - full-pipeline
+        default: validate-only
+
+concurrency:
+  group: iam-pipeline-${{ inputs.environment }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    name: Validate repository (no GCP)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            requirements-dev.txt
+
+      - name: Install validation dependencies
+        run: python -m pip install -r requirements-dev.txt
+
+      - name: Compile Python
+        run: python -m compileall -q .
+
+      - name: Lint Python
+        run: ruff check .
+
+      - name: Run tests
+        env:
+          PYSPARK_PYTHON: python
+        run: pytest -q
+
+  pipeline:
+    name: Run ${{ inputs.operation }} in ${{ inputs.environment }}
+    if: ${{ inputs.operation != 'validate-only' }}
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    environment: ${{ inputs.environment }}
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      PIPELINE_ENV: ${{ inputs.environment }}
+      PROJECT_ID: ${{ vars.GCP_PROJECT_ID }}
+      REGION: ${{ vars.GCP_REGION || 'us-central1' }}
+      BUCKET_NAME: ${{ vars.BUCKET_NAME }}
+      BQ_DATASET: ${{ vars.BQ_DATASET }}
+      DATAPROC_SERVICE_ACCOUNT: ${{ vars.DATAPROC_SERVICE_ACCOUNT }}
+      WIF_PROVIDER: ${{ vars.WIF_PROVIDER }}
+      DEPLOY_SERVICE_ACCOUNT: ${{ vars.DEPLOY_SERVICE_ACCOUNT }}
+      PIPELINE_RUN_ID: gha-${{ github.run_id }}-${{ github.run_attempt }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Validate cloud configuration before authentication
+        env:
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+        run: |
+          set -euo pipefail
+          required=(PROJECT_ID BUCKET_NAME)
+          if [[ "${{ inputs.operation }}" == "full-pipeline" ]]; then
+            required+=(BQ_DATASET DATAPROC_SERVICE_ACCOUNT)
+          fi
+          for name in "${required[@]}"; do
+            [[ -n "${!name:-}" ]] || {
+              echo "ERROR: Set ${name} in the '${PIPELINE_ENV}' GitHub Environment." >&2
+              exit 1
+            }
+          done
+          [[ "${BUCKET_NAME}" =~ ^[a-z0-9][a-z0-9._-]{1,61}[a-z0-9]$ ]] || {
+            echo "ERROR: BUCKET_NAME is not a valid Cloud Storage bucket name." >&2
+            exit 1
+          }
+          if [[ "${{ inputs.operation }}" == "full-pipeline" ]]; then
+            [[ "${BQ_DATASET}" =~ ^[A-Za-z_][A-Za-z0-9_]{0,1023}$ ]] || {
+              echo "ERROR: BQ_DATASET must use letters, numbers, and underscores." >&2
+              exit 1
+            }
+          fi
+          if [[ -n "${WIF_PROVIDER}" ]]; then
+            [[ -n "${DEPLOY_SERVICE_ACCOUNT}" ]] || {
+              echo "ERROR: DEPLOY_SERVICE_ACCOUNT is required with WIF_PROVIDER." >&2
+              exit 1
+            }
+          elif [[ -z "${GCP_SA_KEY}" ]]; then
+            echo "ERROR: Configure WIF_PROVIDER + DEPLOY_SERVICE_ACCOUNT, or add GCP_SA_KEY." >&2
+            exit 1
+          fi
+
+      - id: auth-wif
+        name: Authenticate with Workload Identity Federation
+        if: ${{ env.WIF_PROVIDER != '' }}
+        uses: google-github-actions/auth@v3
+        with:
+          project_id: ${{ env.PROJECT_ID }}
+          workload_identity_provider: ${{ env.WIF_PROVIDER }}
+          service_account: ${{ env.DEPLOY_SERVICE_ACCOUNT }}
+
+      - id: auth-key
+        name: Authenticate with service-account JSON
+        if: ${{ env.WIF_PROVIDER == '' }}
+        uses: google-github-actions/auth@v3
+        with:
+          project_id: ${{ env.PROJECT_ID }}
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - uses: google-github-actions/setup-gcloud@v3
+        with:
+          project_id: ${{ env.PROJECT_ID }}
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install ingestion dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Ensure bounded data resources
+        run: |
+          set -euo pipefail
+          services=(pubsub.googleapis.com storage.googleapis.com)
+          if [[ "${{ inputs.operation }}" == "full-pipeline" ]]; then
+            services+=(bigquery.googleapis.com dataproc.googleapis.com)
+          fi
+          gcloud services enable "${services[@]}" --project "${PROJECT_ID}"
+
+          if ! gcloud storage buckets describe "gs://${BUCKET_NAME}" >/dev/null 2>&1; then
+            gcloud storage buckets create "gs://${BUCKET_NAME}" \
+              --project="${PROJECT_ID}" \
+              --location="${REGION}" \
+              --uniform-bucket-level-access \
+              --public-access-prevention \
+              --soft-delete-duration=0s \
+              --lifecycle-file=config/gcs-lifecycle.json
+          fi
+
+          PUBSUB_TOPIC="iam-events-${PIPELINE_ENV}"
+          PUBSUB_SUBSCRIPTION="${PUBSUB_TOPIC}-pipeline"
+          echo "PUBSUB_TOPIC=${PUBSUB_TOPIC}" >> "${GITHUB_ENV}"
+          echo "PUBSUB_SUBSCRIPTION=${PUBSUB_SUBSCRIPTION}" >> "${GITHUB_ENV}"
+
+          gcloud pubsub topics describe "${PUBSUB_TOPIC}" \
+            --project "${PROJECT_ID}" >/dev/null 2>&1 ||
+            gcloud pubsub topics create "${PUBSUB_TOPIC}" --project "${PROJECT_ID}"
+
+          gcloud pubsub subscriptions describe "${PUBSUB_SUBSCRIPTION}" \
+            --project "${PROJECT_ID}" >/dev/null 2>&1 ||
+            gcloud pubsub subscriptions create "${PUBSUB_SUBSCRIPTION}" \
+              --project "${PROJECT_ID}" \
+              --topic="${PUBSUB_TOPIC}" \
+              --ack-deadline=600 \
+              --message-retention-duration=86400s
+
+          if [[ "${{ inputs.operation }}" == "full-pipeline" ]]; then
+            bq --project_id="${PROJECT_ID}" --location="${REGION}" \
+              show --dataset "${PROJECT_ID}:${BQ_DATASET}" >/dev/null 2>&1 ||
+              bq --project_id="${PROJECT_ID}" --location="${REGION}" \
+                mk --dataset "${PROJECT_ID}:${BQ_DATASET}"
+          fi
+
+      - name: Publish, consume, and write Parquet
+        run: python ingest.py
+
+      - name: Package and upload the Spark application
+        if: ${{ inputs.operation == 'full-pipeline' }}
+        run: |
+          set -euo pipefail
+          zip -q -r iam_spark_package.zip spark_job \
+            -x 'spark_job/spark_transformation_job.py' '*/__pycache__/*'
+          gcloud storage cp spark_job/spark_transformation_job.py \
+            "gs://${BUCKET_NAME}/spark-job/spark_transformation_job.py"
+          gcloud storage cp iam_spark_package.zip \
+            "gs://${BUCKET_NAME}/spark-job/iam_spark_package.zip"
+
+      - name: Submit one TTL-bounded Dataproc Serverless batch
+        if: ${{ inputs.operation == 'full-pipeline' }}
+        run: |
+          set -euo pipefail
+          batch_id="iam-${PIPELINE_ENV}-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          request_id="gha-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          gcloud dataproc batches submit pyspark \
+            "gs://${BUCKET_NAME}/spark-job/spark_transformation_job.py" \
+            --project="${PROJECT_ID}" \
+            --region="${REGION}" \
+            --version=2.2 \
+            --batch="${batch_id}" \
+            --request-id="${request_id}" \
+            --service-account="${DATAPROC_SERVICE_ACCOUNT}" \
+            --staging-bucket="${BUCKET_NAME}" \
+            --ttl=30m \
+            --labels="app=iam-analytics,environment=${PIPELINE_ENV},trigger=github-actions" \
+            --properties="spark.dynamicAllocation.enabled=true,spark.dynamicAllocation.initialExecutors=2,spark.dynamicAllocation.minExecutors=2,spark.dynamicAllocation.maxExecutors=2" \
+            --py-files="gs://${BUCKET_NAME}/spark-job/iam_spark_package.zip" \
+            -- \
+            "--env=${PIPELINE_ENV}" \
+            "--gcs_bucket=${BUCKET_NAME}" \
+            "--bq_project=${PROJECT_ID}" \
+            "--bq_dataset=${BQ_DATASET}" \
+            "--run_id=${PIPELINE_RUN_ID}" \
+            "--write_method=indirect" \
+            "--temporary_gcs_bucket=${BUCKET_NAME}"
+
+      - name: Print result location
+        if: ${{ inputs.operation == 'full-pipeline' }}
+        run: |
+          echo "BigQuery dataset: ${PROJECT_ID}:${BQ_DATASET}"
+          echo "Dataproc region: ${REGION}"
