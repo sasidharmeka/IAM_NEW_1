@@ -36,6 +36,29 @@ def subscription_path(subscriber: Any, project_id: str, subscription: str) -> st
         return subscription
     return subscriber.subscription_path(project_id, subscription)
 
+def acknowledge_in_batches(
+    *,
+    subscriber: Any,
+    sub_path: str,
+    ack_ids: list[str],
+    batch_size: int = 500,
+) -> None:
+    """Acknowledge Pub/Sub messages in bounded requests."""
+
+    if batch_size <= 0:
+        raise ValueError("batch_size must be greater than zero")
+
+    for start in range(0, len(ack_ids), batch_size):
+        batch = ack_ids[start : start + batch_size]
+        subscriber.acknowledge(
+            subscription=sub_path,
+            ack_ids=batch,
+        )
+
+        LOGGER.info(
+            "Acknowledged batch of %s messages",
+            len(batch),
+        )
 
 def pull_messages(
     *,
@@ -181,7 +204,12 @@ def consume_to_gcs(
             for (source, run_id), rows in sorted(grouped.items())
         ]
 
-        subscriber.acknowledge(subscription=sub_path, ack_ids=ack_ids)
+        
+        acknowledge_in_batches(
+        subscriber=subscriber,
+        sub_path=sub_path,
+        ack_ids=ack_ids,
+         )
         LOGGER.info(
             "Acknowledged %s messages after %s successful uploads",
             len(ack_ids),
